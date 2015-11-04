@@ -1,6 +1,11 @@
 #-*-coding:utf-8-*-
 
 #list
+#list的形式时[],里面添加的元素以,分隔
+
+l = []#空的list
+print l
+
 numbers=["1", "2", "3", "4"]
 print numbers
 
