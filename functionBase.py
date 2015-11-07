@@ -122,5 +122,65 @@ def add_end(L = None):
 print add_end()
 print add_end()
 
+print "由定义a^2 + b^2 + c^2 + ....这样的函数解决方案引发的思考"
 print "python的可变参数"
+print "可变参数意味着函数的参数可以0个，也可以是1个，2个"
+"""
+现有的解决方案讲要计算的数据a, b, c ...组装到List或者tuple里面
+"""
+def calc(numbers):
+    sum =  0
+    for number in numbers:
+        sum += number*number;
+    return sum
 
+print calc([1, 2, 3])
+print calc((1, 2, 3))
+
+print "不方便的是你还需要组装这是参数，python提供了可变参数的机制"
+"""
+函数的调用方式简化为calc(1, 2, 3)
+"""
+def calc(*numbers):
+    sum =  0
+    for number in numbers:
+        sum += number*number;
+    return sum
+
+print calc(1, 2, 3)
+"""
+定义可变参数和定义list和tuple相比，只是在参数前面加了一个×号，而在函数内部\
+参数numbers接收到的值就是一个tuple
+"""
+
+print calc()
+
+print "当你使用的数据本身就是一个list或者tuple怎么办"
+#方式1
+nums = [1, 2, 3]
+print calc(nums[0], nums[1], nums[2])
+#方式2
+print calc(*nums)#推荐写法
+
+print "关键字参数"
+"""
+关键字参数有什么用？它可以扩展函数的功能。比如，在person函数里，我们保证能接收到name和age这两个参数，但是，如果调用者愿意提供更多的参数，我们也能收到。试想你正在做一个用户注册的功能，除了用户名和年龄是必填项外，其他都是可选项，利用关键字参数来定义这个函数就能满足注册的需求。
+"""
+def personInfo (name, age, **kw):
+    print "name:",name, "age:",age, "other:",kw
+
+personInfo("zhao", 18)
+
+print personInfo("zhao", 18, city = "BJ")
+
+print "和可变参数类似，如果关键字参数也已经是一个字的话，需要**"
+kw = {"city":"beijing", "job":"IT"}
+personInfo("qian", 28, **kw)
+
+
+print "python中定义函数可以使用多种参数组合起来用，但是有顺序要求，必须是必须参数，默认参数，可变参数和关键参数"
+
+def paraFunc(a, b, c= "0", *args, **kw):
+    print a, b, c, args, kw
+
+paraFunc(1, 2)
