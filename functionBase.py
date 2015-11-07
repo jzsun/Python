@@ -184,3 +184,20 @@ def paraFunc(a, b, c= "0", *args, **kw):
     print a, b, c, args, kw
 
 paraFunc(1, 2)
+
+paraFunc(1, 2, 3)
+
+paraFunc(1, 2, 3, "a", "b")
+
+paraFunc(1, 2, 3, "a", "b", x = 99)
+
+
+args = (1, 2, 3, 4)
+kw = {"x":99}
+paraFunc(*args, **kw)
+
+'''
+Note:
+    *args是可变参数，args接收的是一个tuple
+    **kw是关键字参数，kw接收的是一个dict
+'''

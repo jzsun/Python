@@ -7,6 +7,8 @@
  HowtoUseModule.py
 
 ***************************
+学习顺序
+
 hello.py
 list.py
 tuple.py
@@ -15,4 +17,5 @@ ifstatement.py
 dict.py
 set.py
 thinkInUnchangeableObject
-function.py
+functionBase.py
+recursionFunction.py //20151107
