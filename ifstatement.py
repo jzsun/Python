@@ -7,5 +7,9 @@ if age >= 18:
 #因为raw_iput返回的是字符串，必须转型int(age)
 elif age > 12:
     print("teenager")
-else:
+elif age >= 0:
    print("Child")
+else:
+    pass #pass是个占位符，一个空分支会报语法错误
+
+print "这个功能是错误的，因为我们没有考虑到raw_input()返回的是字符串。必须转型"
