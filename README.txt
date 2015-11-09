@@ -19,3 +19,6 @@ set.py
 thinkInUnchangeableObject
 functionBase.py
 recursionFunction.py //20151107-1109只是简单的概念介绍和实现了阶乘
+advanceProperty.py #介绍python的高级特性
+	slice.py #切片操作
+
