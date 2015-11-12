@@ -9,7 +9,7 @@
 ***************************
 project
 1. read mp3 info #读取自己里的MP3文件，获得作词，作曲，歌手的信息，因为我想记录自己听歌的记录，回忆下为什么听这歌，而且懒得自己一个个手写拷贝，好复杂 2015-11-10
-
+readMP3Info.py
 ***************************
 学习顺序
 
@@ -26,3 +26,4 @@ recursionFunction.py //20151107-1109只是简单的概念介绍和实现了阶�
 advanceProperty.py #介绍python的高级特性
 	slice.py #切片操作
 	iter.py #迭代操作
+	listComprehensions.py #列表生成式
