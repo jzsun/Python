@@ -54,6 +54,6 @@ def handle(path, writefile):
 
 if __name__=="__main__":
     readPath = "/home/sundashe/song"
-    writefile = "/home/sundashe/mp3.info"
+    writefile = "/home/sundashe/mp3.txt"
     handle(readPath, writefile)
 
