@@ -27,4 +27,4 @@ advanceProperty.py #介绍python的高级特性
 	slice.py #切片操作
 	iter.py #迭代操作
 	listComprehensions.py #列表生成式
-	generator.py#生成器
+	generator.py#生成器,还是需要多理解

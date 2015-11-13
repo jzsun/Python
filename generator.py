@@ -39,7 +39,7 @@ def fib(num):
         print b
         a, b = b, a+b
         n += 1
-fib(6)
+#fib(6)
 
 print "我们可以看出函数是能够实现我们想要的效果, 因此python提供了另外一种定义generator的方法"
 
@@ -50,21 +50,41 @@ def fib(num):
         yield  b
         a, b = b, a+b
         n += 1
-print fib(6)
+#print fib(6)
 
 print "关键试试如何理解这个类似函数的生成器?"
 
 
-def fib(num):  
+def fib(num):
     n, a, b = 0, 0, 1
     while n < num:
         yield  b
         a, b = b, a+b
         n += 1
 
-print "调用next的时候执行， 遇到yield返回，更新值，下次执行时从上次返回的yield语句处继续执行"
+print "generator函数在用next的时候执行， 遇到yield返回，更新值，下次执行时从上次返回的yield语句处继续执行"
+'''
+比如对与fib(6)的执行步骤，yield之前之后分别添加一个输出语句
+'''
+def fibTest(num):  
+    n, a, b = 0, 0, 1
+    while n < num:
+        print "befor--yield"
+        yield  b
+        print "after--yield"
+        a, b = b, a+b
+        n += 1
 
+#for fib in fib(6):
+#    print fib
 
+"""
+通过下面的分析，我们可以看出generator的特性
+"""
+fib = fibTest(6)
 
+print fib.next() #第一次执行只会输出befor--yield
 
+print fib.next()
 
+print fib.next()
