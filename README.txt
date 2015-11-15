@@ -30,3 +30,6 @@ advanceProperty.py #介绍python的高级特性
 	generator.py#生成器,还是需要多理解
 functionalProgramming.py #函数式编程
 	higherOrderFunc.py #高阶函数
+	filter.py #从字面上看，就是过滤的意思
+	mapreduce.py
+	sorted.py
