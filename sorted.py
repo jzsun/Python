@@ -7,6 +7,10 @@ print "list排序方法"
 print "1.list的成员函数sort进行排序，在原位重新排列列表"
 print "2.built-in函数sorted进行排序(version >= 2.4), 产生一个新的列表"
 
+'''
+the list.sort() method is only defined for lists. In contrast, the sorted() function accepts any iterable.
+
+''
 #help(sorted)
 
 #help(list.sort)
