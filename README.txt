@@ -39,6 +39,6 @@ advanceProperty.py #介绍python的高级特性
 functionalProgramming.py #函数式编程
 	higherOrderFunc.py #高阶函数
 	filter.py #从字面上看，就是过滤的意思
-	mapreduce.py
-	sorted.py
-	returnFunc.py #返回函数
+	mapreduce.py #20151206
+	sorted.py #依然有未懂得地方
+	returnFunc.py #返回函数20151206
