@@ -42,3 +42,4 @@ functionalProgramming.py #函数式编程
 	mapreduce.py #20151206
 	sorted.py #依然有未懂得地方
 	returnFunc.py #返回函数20151206
+	partialFunc.py #偏函数
