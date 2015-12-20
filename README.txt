@@ -46,3 +46,7 @@ functionalProgramming.py #函数式编程
 	sorted.py #依然有未懂得地方
 	returnFunc.py #返回函数20151206
 	partialFunc.py #偏函数
+OOP
+	oop.py#class的一些基本信息
+	inheritanceAndPoly.py #继承和多态
+	objectInfo.py #获取对象的信息
